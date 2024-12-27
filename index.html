@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="newspaper">
+        <div class="header">
+            <c>Articulate</c>
+            <p id="current-date"></p>
+        </div>
+        <h1></h1>
+        <div class="filters">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search keywords...">
+                <button id="search-button">Search</button>
+            </div>
+            <div class="sentiment-filter">
+                <span><b>Emotional Spectrum : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> </span>
+                <button class="sentiment-btn" data-sentiment="positive">Positive</button>
+                <button class="sentiment-btn" data-sentiment="neutral">Neutral</button>
+                <button class="sentiment-btn" data-sentiment="negative">Negative</button>
+                <button class="sentiment-btn active" data-sentiment="all">All</button>
+            </div>
+        </div>
+        <div id="articles-container">
+            <!-- Articles will be dynamically inserted here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
